@@ -1,8 +1,18 @@
 //footer.js
 
 import './footer.css';
+import styled from "styled-components";
+import {StyledButton} from "../styled-components/styled-button";
 
 
-export const Footer = ()=>{
-    return(<div>footer</div>);
+export const Footer = () => {
+
+    const StyledInput = styled.input`
+      border: 1px solid cornflowerblue;
+      border-radius: 5px;
+    `
+    return (<div>
+        <StyledButton>styled button</StyledButton>
+        <StyledInput/>
+    </div>);
 }
