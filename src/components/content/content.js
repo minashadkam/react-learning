@@ -2,6 +2,7 @@
 //content.js
 
 import UserInfo from "../user-info/user-info";
+import Counter from "../counter/counter";
 
 export const  Content =(props)=> {
     return (
@@ -10,6 +11,9 @@ export const  Content =(props)=> {
                <span> وضعیت کاربر غیر فعال میباشد</span>
                <span> کاربر تستی</span>
             </UserInfo>
+
+
+            <Counter/>
         </div>
     );
 }
