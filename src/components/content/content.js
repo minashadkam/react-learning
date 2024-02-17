@@ -1,9 +1,15 @@
 
 //content.js
+
+import UserInfo from "../user-info/user-info";
+
 export const  Content =(props)=> {
     return (
         <div className="content">
-            {props.children}
+            <UserInfo name="mina" age={20} exitHandler={()=>console.log('exit')} >
+               <span> وضعیت کاربر غیر فعال میباشد</span>
+               <span> کاربر تستی</span>
+            </UserInfo>
         </div>
     );
 }
