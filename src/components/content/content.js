@@ -3,6 +3,7 @@
 
 import UserInfo from "../user-info/user-info";
 import Counter from "../counter/counter";
+import {Greeting} from "../greeting";
 
 export const  Content =(props)=> {
     return (
@@ -12,8 +13,10 @@ export const  Content =(props)=> {
                <span> کاربر تستی</span>
             </UserInfo>
 
-
             <Counter/>
+
+            <Greeting  isLoggedIn={false}/>
+            <Greeting  isLoggedIn={true}/>
         </div>
     );
 }
