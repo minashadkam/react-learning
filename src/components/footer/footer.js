@@ -1,6 +1,6 @@
 //footer.js
 
-import './footer.css';
+import './footer.scss';
 import styled from "styled-components";
 import {StyledButton} from "../styled-components/styled-button";
 

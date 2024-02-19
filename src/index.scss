@@ -1,0 +1,62 @@
+$iran-sans: 'iranSans';
+$font-path-eot: './assets/fonts/iransans/IRANSansWeb.eot';
+$font-path-woff2: './assets/fonts/iransans/IRANSansWeb.woff';
+$font-path-tff: './assets/fonts/iransans/IRANSansWeb.ttf';
+
+$material-icon-font-family: 'Material Icons';
+$material-icon-font-family-regular: 'MaterialIcons-Regular';
+$material-icon-font-path-eot: './assets/fonts/icons/MaterialIcons-Regular.eot';
+$material-icon-font-path-woff2: './assets/fonts/icons/MaterialIcons.woff2';
+$material-icon-font-path-woff2-regular: './assets/fonts/icons/MaterialIcons-Regular.woff';
+$material-icon-font-path-tff: './assets/fonts/icons/MaterialIcons-Regular.ttf';
+
+
+@font-face {
+  font-family: $iran-sans;
+  font-style: normal;
+  src: url($font-path-eot), url($font-path-woff2) format("woff"),
+  url($font-path-tff) format("truetype");
+}
+
+@font-face {
+  font-family: $material-icon-font-family;
+  font-style: normal;
+  font-weight: 400;
+  src: url($material-icon-font-path-eot); /* For IE6-8 */
+  src: local($material-icon-font-family),
+  local($material-icon-font-family-regular),
+  url($material-icon-font-path-woff2) format("woff2"),
+  url($material-icon-font-path-woff2-regular) format("woff"),
+  url($material-icon-font-path-tff) format("truetype");
+}
+
+.material-icons {
+  font-family: $material-icon-font-family;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+
+* {
+  font-family: $iran-sans, sans-serif;
+  box-sizing: border-box;
+}
+
