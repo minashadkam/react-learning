@@ -55,6 +55,11 @@ $material-icon-font-path-tff: './assets/fonts/icons/MaterialIcons-Regular.ttf';
   font-feature-settings: "liga";
 }
 
+
+body{
+  direction: rtl;
+}
+
 * {
   font-family: $iran-sans, sans-serif;
   box-sizing: border-box;
