@@ -3,6 +3,7 @@ import {Link} from "react-router-dom";
 import PropTypes from "prop-types";
 import {Action} from "../../models/action";
 import {Avatar} from "../avatar/avatar";
+import Tooltip from "../tooltip/tooltip";
 
 
 export const Header = (props) => {
@@ -32,9 +33,9 @@ export const Header = (props) => {
                         const className = "material-icons".concat(item.styleClasses || '');
                         let itemElm = null;
                         if (item.type === 'icon') {
-                            itemElm = <i key={index} className={className} onClick={(event) => {
+                            itemElm = <Tooltip  text={item?.tooltip}><i key={index} className={className} onClick={(event) => {
                                 item?.command && item?.command(event)
-                            }}>{item.icon}</i>
+                            }}>{item.icon}</i></Tooltip>
                         } else if (item.type === 'text') {
                             itemElm = <span key={index} onClick={(event) => {
                                 item?.command && item?.command(event)

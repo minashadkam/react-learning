@@ -2,14 +2,15 @@ import PropTypes from "prop-types";
 import './avatar.scss'
 
 export const Avatar = (props) => {
-
     const {
         value,
         styleClasses,
         type,
+        shape,
+        size
     } = props;
 
-    const classes = 'avatar'.concat(styleClasses);
+    const classes = 'avatar'.concat([styleClasses || '', `avatar-${shape}`, `avatar-${size}`]);
     let elm = null;
     if (type === 'label') {
         elm = <span>{value}</span>
